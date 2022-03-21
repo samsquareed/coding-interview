@@ -17,3 +17,20 @@ class Solution {
         return temp.next;
     }
 }
+
+class Solution1 {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode newHead = new ListNode(-1);
+        newHead.next = head;
+        ListNode curr = head;
+        ListNode prev = newHead;
+        while (curr != null) {
+            if (curr.val == val)
+                prev.next = curr.next;
+            else
+                prev = prev.next;
+            curr = curr.next;
+        }
+        return newHead.next;
+    }
+}
