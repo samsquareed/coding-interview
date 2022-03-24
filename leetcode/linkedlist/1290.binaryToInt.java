@@ -25,6 +25,10 @@ class Solution1 {
         int res = 0;
         while (head != null) {
             res = (res << 1) | head.val;
+            /* or
+               res = res + head.val;
+               head = head.next;
+             */
             head = head.next;
         }
         return res;
