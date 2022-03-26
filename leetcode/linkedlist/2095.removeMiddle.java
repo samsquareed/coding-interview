@@ -14,3 +14,8 @@ class Solution {
         return head;
     }
 }
+
+// some useful technique:
+// slow.val = slow.next.val;   copy the value of next node to curr node.
+// slow.next=slow.next.next;  then connect curr.next with next of next 
+// i,e next node is skipped(bcz it's value already copied to curr node).
