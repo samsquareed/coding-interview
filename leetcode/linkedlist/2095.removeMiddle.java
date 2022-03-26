@@ -29,7 +29,7 @@ class Solution1 {
             slow = slow.next;
             fast = fast.next.next;
         }
-        if (slow.next == null) {
+        if (slow.next == null) { // if list cntains only 2 nodes
             slow = head;
             slow.next = null;
         } else {
