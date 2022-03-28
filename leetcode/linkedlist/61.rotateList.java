@@ -13,7 +13,7 @@ class Solution {
         if(head == null || head.next == null)
             return head;
         int len = Length(head);
-        if(k==0)
+        if(k%len==0)
             return head;
         if(k>len)
             k = k%len;
